@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A5C68">
+<meta name="description" content="FitVerse 40+: l'allenamento di forza tre volte a settimana è la base. Advanced Muscle Plus è un'integrazione facoltativa. Pagina ufficiale in inglese, con disclaimer e informativa affiliato.">
+<meta name="robots" content="noindex, nofollow">
+<title>Restare forti dopo i 40 | FitVerse 40+</title>
+<style>
+:root{
+  --teal:#0A5C68;
+  --teal-mid:#0E7A86;
+  --teal-soft:#E7F4F6;
+  --ink:#15252B;
+  --muted:#4E636B;
+  --line:#D5E3E6;
+  --bg:#FFFFFF;
+  --orange:#F26700;
+  --orange-dark:#D85A00;
+  --sand:#FFF6EE;
+  --warn:#8A4B12;
+  --radius:16px;
+  --shadow:0 8px 28px rgba(10,92,104,.10);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.55;
+  font-size:17px;
+}
+img{max-width:100%;height:auto;border:0}
+a{color:var(--teal)}
+.wrap{width:min(640px,100%);margin:0 auto;padding:0 20px}
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(1.2) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:12px;padding:12px 0}
+.brand img{width:52px;height:52px;border-radius:50%;display:block}
+.brand-text{display:flex;flex-direction:column;gap:1px}
+.brand-text strong{font-size:1.02rem;letter-spacing:-.01em;line-height:1.15}
+.brand-text span{font-size:.78rem;color:var(--muted)}
+.hero{padding:28px 0 8px}
+.eyebrow{
+  display:inline-block;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--teal);
+  margin:0 0 10px;
+}
+h1{
+  margin:0 0 14px;
+  font-size:clamp(1.85rem,7vw,2.35rem);
+  line-height:1.15;
+  letter-spacing:-.03em;
+  background:linear-gradient(105deg,var(--teal) 0%,#1A6F78 46%,var(--orange) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.hero p{margin:0;color:var(--muted);font-size:1.05rem}
+h2{margin:0 0 14px;font-size:1.28rem;letter-spacing:-.02em;line-height:1.25}
+section{padding:28px 0}
+.tips{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.tips li{
+  display:grid;
+  grid-template-columns:48px 1fr;
+  gap:12px;
+  align-items:start;
+  background:#F7FBFC;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:16px 16px 16px 14px;
+}
+.num{
+  width:48px;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:1rem;color:#fff;
+  background:linear-gradient(145deg,var(--teal) 0%,#1A8890 55%,var(--orange) 140%);
+}
+.tips h3{margin:2px 0 6px;font-size:1.02rem}
+.tips p{margin:0;color:var(--muted);font-size:.95rem}
+.product{
+  background:linear-gradient(180deg,var(--teal-soft) 0%,#fff 70%);
+  border:1px solid #C5DDE1;
+  border-radius:20px;
+  padding:22px 18px 20px;
+  box-shadow:var(--shadow);
+}
+.product .kicker{margin:0 0 6px;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.product h2{margin-bottom:10px}
+.product p{margin:0 0 12px}
+.product p:last-child{margin-bottom:0}
+.know{margin:22px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.know li{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:13px 14px 13px 42px;
+  position:relative;
+  font-size:.95rem;
+  color:var(--ink);
+}
+.know li::before{
+  content:"";
+  position:absolute;left:14px;top:16px;
+  width:14px;height:14px;border-radius:50%;
+  background:
+    linear-gradient(var(--teal),var(--teal)) center/8px 2px no-repeat,
+    linear-gradient(var(--teal),var(--teal)) center/2px 8px no-repeat,
+    #D7EEF1;
+}
+.cta-block{padding:8px 0 6px;text-align:center}
+.cta{
+  display:block;
+  width:100%;
+  text-decoration:none;
+  color:#fff;
+  font-weight:700;
+  font-size:1.02rem;
+  line-height:1.3;
+  text-align:center;
+  padding:16px 18px;
+  border-radius:14px;
+  background:linear-gradient(105deg,var(--teal) 0%,#1A7F88 42%,var(--orange) 100%);
+  box-shadow:0 10px 24px rgba(242,103,0,.28);
+}
+.cta:hover,.cta:focus{filter:brightness(1.05)}
+.cta small{display:block;font-weight:600;font-size:.78rem;opacity:.92;margin-top:3px}
+.aff{
+  margin:12px 0 0;
+  font-size:.88rem;
+  color:var(--muted);
+  text-align:center;
+}
+.disc{
+  background:var(--sand);
+  border:1.5px solid #F0C49A;
+  border-radius:18px;
+  padding:20px 18px;
+}
+.disc h2{color:var(--warn);margin-bottom:10px}
+.disc ul{margin:0;padding:0 0 0 1.15rem}
+.disc li{margin:0 0 8px;color:#5C3A1A}
+.disc li:last-child{margin-bottom:0}
+footer{
+  margin-top:8px;
+  padding:28px 0 36px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:.88rem;
+  text-align:center;
+}
+footer p{margin:0 0 8px}
+footer .copy{margin-top:14px;color:var(--ink);font-weight:700}
+.hero-rule{
+  height:4px;width:84px;border-radius:99px;margin:18px 0 0;
+  background:linear-gradient(90deg,var(--teal),var(--orange));
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <img src="data:image/jpeg;base64,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" width="52" height="52" alt="Logo FitVerse 40+">
+      <div class="brand-text">
+        <strong>FitVerse 40+</strong>
+        <span>@fitverse_over40</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Allenamento dopo i 40</p>
+      <h1 id="hero-title">Restare forti dopo i 40</h1>
+      <p>Dopo i 40 anni, la base per restare forti è l’allenamento di forza: tre sedute a settimana bastano per fare la differenza. Gli integratori, se li usi, sono un extra facoltativo: non sostituiscono l’allenamento, un’alimentazione varia e il riposo.</p>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </section>
+
+    <section aria-labelledby="tips-title">
+      <h2 id="tips-title">Tre indicazioni semplici per allenarti dopo i 40</h2>
+      <ol class="tips">
+        <li>
+          <div class="num" aria-hidden="true">1</div>
+          <div>
+            <h3>Tre allenamenti di forza a settimana</h3>
+            <p>Meglio un lavoro su tutto il corpo, fatto con regolarità, che sessioni troppo lunghe. Parti da carichi che controlli bene e aumentali poco alla volta.</p>
+          </div>
+        </li>
+        <li>
+          <div class="num" aria-hidden="true">2</div>
+          <div>
+            <h3>Rispetta il recupero</h3>
+            <p>Tra una seduta e l’altra lascia almeno un giorno di riposo. Se senti un dolore acuto o insolito, fermati e parla con un medico o un professionista sanitario.</p>
+          </div>
+        </li>
+        <li>
+          <div class="num" aria-hidden="true">3</div>
+          <div>
+            <h3>La costanza conta più dell’intensità</h3>
+            <p>Un breve riscaldamento, una dieta varia con abbastanza proteine e un sonno adeguato aiutano più di un allenamento eccessivo.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="product-title">
+      <div class="product">
+        <p class="kicker">Integrazione facoltativa</p>
+        <h2 id="product-title">Cosa uso come integrazione</h2>
+        <p>Su @fitverse_over40 a volte segnalo <strong>Advanced Muscle Plus</strong>, un integratore alimentare del produttore Advanced Bionutritionals, venduto in flaconi.</p>
+        <p>Il produttore lo presenta come un integratore pensato per chi, dopo i 40 anni, vuole supportare muscoli e forza. Sulla pagina ufficiale indica due componenti principali della formula: dileucina (Peptide DL185™) e MyHMB®. Secondo il produttore, questi ingredienti sono pensati per favorire la sintesi proteica muscolare e aiutare a contrastare la perdita di muscolo legata all’età.</p>
+        <p>Il produttore consiglia di assumerlo dopo l’allenamento e, nei giorni di riposo, insieme al primo pasto. Dichiara inoltre che la formula è senza stimolanti, coloranti artificiali e allergeni comuni, e invita comunque a consultare un medico prima di iniziare, soprattutto in caso di condizioni di salute o di farmaci in corso.</p>
+        <p>Queste sono dichiarazioni del produttore, non nostre. Non abbiamo testato il prodotto in modo indipendente e non promettiamo risultati. I risultati variano da persona a persona e non sono garantiti. La pagina ufficiale è in inglese e i prezzi sono in dollari USA (USD).</p>
+      </div>
+
+      <h2 style="margin-top:26px">Cosa sapere prima di aprire il link</h2>
+      <ul class="know">
+        <li>La pagina di vendita è in inglese e i prezzi sono in dollari USA. Al momento della nostra verifica, un flacone era indicato a 79,95&nbsp;$. Controlla sempre il prezzo aggiornato sulla pagina ufficiale.</li>
+        <li>L’acquisto avviene tramite Digistore24, che gestisce il pagamento.</li>
+        <li>Il produttore indica una garanzia di 90 giorni: se non sei soddisfatto puoi rispedire i flaconi, anche vuoti, e chiedere il rimborso completo meno le spese di spedizione. Verifica sempre i termini aggiornati sulla pagina ufficiale, perché possono cambiare.</li>
+        <li>Link affiliato: se acquisti potrei ricevere una commissione senza costi aggiuntivi per te.</li>
+      </ul>
+
+      <div class="cta-block">
+        <a class="cta" href="https://www.advancedbionutritionals.com/DS24/Advanced-Muscle-Plus/Strange-Muscle-Building-Secret/HD.htm#aff=mdimegliomdm9cd2" rel="sponsored noopener" target="_blank">
+          Scopri Advanced Muscle Plus
+          <small>(pagina ufficiale in inglese)</small>
+        </a>
+        <p class="aff">Link affiliato: se acquisti potrei ricevere una commissione senza costi aggiuntivi per te.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="disc-title">
+      <div class="disc">
+        <h2 id="disc-title">Avvertenze importanti</h2>
+        <ul>
+          <li>Questo contenuto non è un consiglio medico, nutrizionale o farmacologico.</li>
+          <li>Consulta il tuo medico prima di assumere integratori, soprattutto se hai condizioni di salute, sei in gravidanza o allatti, o prendi farmaci.</li>
+          <li>Gli integratori non sostituiscono una dieta varia e un sano stile di vita, né l’allenamento.</li>
+          <li>I risultati variano e non sono garantiti.</li>
+          <li>Il produttore precisa che le sue dichiarazioni non sono state valutate dalla Food and Drug Administration (FDA) statunitense, e che il prodotto non è destinato a diagnosticare, curare o prevenire malattie.</li>
+          <li>Questo contenuto è stato creato con l’aiuto dell’intelligenza artificiale.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Link affiliato: se acquisti potrei ricevere una commissione senza costi aggiuntivi per te.</p>
+      <p>Contenuto informativo. Non è consulenza medica. Consulta un medico prima di usare integratori.</p>
+      <p class="copy">© FitVerse 40+</p>
+    </div>
+  </footer>
+</body>
+</html>
