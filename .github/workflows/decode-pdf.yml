@@ -1,0 +1,28 @@
+name: Decode Metodo 3x PDF
+on:
+  push:
+    branches: [main]
+    paths:
+      - metodo3x.pdf.b64
+      - .github/workflows/decode-pdf.yml
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode and commit PDF
+        run: |
+          set -euo pipefail
+          base64 -d metodo3x.pdf.b64 > metodo3x.pdf
+          file metodo3x.pdf
+          git add metodo3x.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --cached --quiet; then
+            echo "PDF unchanged"
+            exit 0
+          fi
+          git commit -m "Add Metodo 3x free guide PDF"
+          git push
