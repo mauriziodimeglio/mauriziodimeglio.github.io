@@ -1,0 +1,30 @@
+name: Decode Open Graph images
+on:
+  push:
+    branches: [main]
+    paths:
+      - og/*.png.b64
+      - .github/workflows/decode-og.yml
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode and commit PNGs
+        run: |
+          set -euo pipefail
+          for f in og/*.png.b64; do
+            base64 -d "$f" > "${f%.b64}"
+            file "${f%.b64}"
+            git add "${f%.b64}"
+          done
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --cached --quiet; then
+            echo "PNGs unchanged"
+            exit 0
+          fi
+          git commit -m "Add decoded FitVerse Open Graph PNG images"
+          git push
